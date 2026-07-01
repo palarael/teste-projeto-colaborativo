@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            height:400px;
+            background:linear-gradient(135deg,#0d6efd,#00b4d8);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            color:white;
+            text-align:center;
+        }
+
+        .hero h1{
+            font-size:50px;
+        }
+
+        .hero p{
+            margin:20px;
+            font-size:20px;
+        }
+
+        .btn{
+            background:white;
+            color:#0d6efd;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+        }
+
+        section{
+            padding:50px;
+        }
+
+        .cards{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+            flex:1;
+            min-width:250px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            background:#0d6efd;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>Meu Site</h2>
+
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Bem-vindo!</h1>
+    <p>Crie seu site moderno usando HTML, CSS e JavaScript.</p>
+
+    <a class="btn" href="#">Saiba Mais</a>
+</div>
+
+<section>
+    <h2>Nossos Serviços</h2>
+    <br>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Desenvolvimento</h3>
+            <p>Criação de sites profissionais e responsivos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Design</h3>
+            <p>Interfaces modernas e elegantes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Suporte</h3>
+            <p>Manutenção e atualização de sistemas.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Contato</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nome">
+
+        <input type="email" placeholder="E-mail">
+
+        <textarea rows="5" placeholder="Mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 - Meu Site. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
