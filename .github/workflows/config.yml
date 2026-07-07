@@ -25,7 +25,7 @@ jobs:
       - name: Upload dos arquivos do Site
         uses: actions/upload-pages-artifact@v3
         with:
-          patch: '.'
+          path: '.'
 
        # Atualizando para @v4
       - name: Publicar no GitHUb Pages
